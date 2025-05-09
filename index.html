@@ -5,30 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Fernanda</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header id="main-header">
         <picture id="logo">
-            <source media="(min-width: 1300px)" srcset="../assets/images/logo.png">
-            <source media="(min-width: 800px)" srcset="../assets/images/logo_sm.png">
-            <img src="../assets/images/logo_sm.png" alt="logo"></img>
+            <source media="(min-width: 1300px)" srcset="assets/images/logo.png">
+            <source media="(min-width: 800px)" srcset="assets/images/logo_sm.png">
+            <img src="assets/images/logo_sm.png" alt="logo"></img>
         </picture>
         <a href="#home-section">Home</a>
         <a href="#about-me-section">Sobre mim</a>
         <a href="#psychotherapy-section">Psicoterapia</a>
+        <!--TODO: Section will be included on next update-->
         <!-- <a href="#to-think-section">Textos</a> -->
         <a href="#contacts-section">Contato</a>
-        <a href="#downloads-section">Downloads</a>
+        <!--TODO: Section will be included on next update-->
+        <!-- <a href="#downloads-section">Downloads</a> -->
         <a href="#faq-section">Dúvidas</a>
     </header>
     <header id="main-header-smaller-screen">
         <picture id="logo">
-            <source media="(min-width: 1300px)" srcset="../assets/images/logo.png">
-            <source media="(min-width: 800px)" srcset="../assets/images/logo_sm.png">
-            <img src="../assets/images/logo_sm.png" alt="logo"></img>
+            <source media="(min-width: 1300px)" srcset="assets/images/logo.png">
+            <source media="(min-width: 800px)" srcset="assets/images/logo_sm.png">
+            <img src="assets/images/logo_sm.png" alt="logo"></img>
         </picture>
         <button id="menu-button">&#9776;</button>
         <div id="side-menu">
@@ -48,10 +50,10 @@
             <div class="content">
                 <div class="photo-container photo-container-home">
                     <picture class="photo photo-home">
-                        <source media="(min-width: 1600px)" srcset="../assets/images/fernanda_home_lg.jpg">
-                        <source media="(min-width: 1200px)" srcset="../assets/images/fernanda_home_md.jpg">
-                        <source media="(min-width: 800px)" srcset="../assets/images/fernanda_home_sm.jpg">
-                        <img src="../assets/images/fernanda_home_sm.jpg" alt="maria_fernanda_img">
+                        <source media="(min-width: 1600px)" srcset="assets/images/fernanda_home_lg.jpg">
+                        <source media="(min-width: 1200px)" srcset="assets/images/fernanda_home_md.jpg">
+                        <source media="(min-width: 800px)" srcset="assets/images/fernanda_home_sm.jpg">
+                        <img src="assets/images/fernanda_home_sm.jpg" alt="maria_fernanda_img">
                     </picture>
                 </div>
                 <div class="text-content">
@@ -70,10 +72,10 @@
             <div class="content about-me-content">
                 <div class="photo-container photo-container-about-me">
                     <picture class="photo">
-                        <source media="(min-width: 1600px)" srcset="../assets/images/fernanda_about_me_lg.jpg">
-                        <source media="(min-width: 1200px)" srcset="../assets/images/fernanda_about_me_md.jpg">
-                        <source media="(min-width: 800px)" srcset="../assets/images/fernanda_about_me_sm.jpg">
-                        <img src="../assets/images/fernanda_about_me_sm.jpg" alt="maria_fernanda_img">
+                        <source media="(min-width: 1600px)" srcset="assets/images/fernanda_about_me_lg.jpg">
+                        <source media="(min-width: 1200px)" srcset="assets/images/fernanda_about_me_md.jpg">
+                        <source media="(min-width: 800px)" srcset="assets/images/fernanda_about_me_sm.jpg">
+                        <img src="assets/images/fernanda_about_me_sm.jpg" alt="maria_fernanda_img">
                     </picture>
                 </div>
                 <div class="text-content">
@@ -93,7 +95,7 @@
                             forma com que lidamos com nossas experiências internas e de que forma escolhemos construir
                             nossas vidas. Em geral, a psicologia me encanta quando observo toda complexidade,
                             profundidade e por todo potencial transformador para vida das pessoas.</p>
-                        <a href="about_me_detail_page.html"><button class="dark-button">Ver mais</button></a>
+                        <a href="src/about_me_detail_page.html"><button class="dark-button">Ver mais</button></a>
                     </div>
                 </div>
             </div>
@@ -120,7 +122,7 @@
                             Salvador Shopping).</P>
                     </div>
                     <div class="psychotherapy-grid-container">
-                        <img class="psychotherapy-grid-img" src="../assets/images/fernanda_psychotherapy.jpg"
+                        <img class="psychotherapy-grid-img" src="assets/images/fernanda_psychotherapy.jpg"
                             alt="neuropsychological-assesment">
                         <h2>AVALIAÇÃO NEUROPSICOLÓGICA</h2>
                         <P>Processo essencial para a compreensão do funcionamento atual do cérebro em relação as funções
@@ -135,10 +137,11 @@
                             profissionais.</P>
                     </div>
                 </div>
-                <a href="psychotherapy_detail_page.html"><button class="dark-button">Ver mais</button></a>
+                <a href="src/psychotherapy_detail_page.html"><button class="dark-button">Ver mais</button></a>
             </div>
         </section>
-        <section id="to-think-section" class="default-background medium-background-color">
+        <!--TODO: Section will be included on next update-->
+        <!-- <section id="to-think-section" class="default-background medium-background-color">
             <header id="to-think-header"></header>
             <h1 id="to-think-title">Para refletir</h1>
             <div id="to-think-grid">
@@ -166,14 +169,14 @@
                     </div>
                     <img class="to-think-grid-img" alt="handle-errors">
                 </div>
-        </section>
+        </section> -->
         <section id="contacts-section" class="default-background light-background-color">
             <div id="contacts-content-container">
                 <picture id="contacts-img">
-                    <source media="(min-width: 1600px)" srcset="../assets/images/fernanda_contacts_lg.jpg">
-                    <source media="(min-width: 1200px)" srcset="../assets/images/fernanda_contacts_md.jpg">
-                    <source media="(min-width: 800px)" srcset="../assets/images/fernanda_contacts_sm.jpg">
-                    <img src="../assets/images/fernanda_contacts_sm.jpg" alt="maria_fernanda_img">
+                    <source media="(min-width: 1600px)" srcset="assets/images/fernanda_contacts_lg.jpg">
+                    <source media="(min-width: 1200px)" srcset="assets/images/fernanda_contacts_md.jpg">
+                    <source media="(min-width: 800px)" srcset="assets/images/fernanda_contacts_sm.jpg">
+                    <img src="assets/images/fernanda_contacts_sm.jpg" alt="maria_fernanda_img">
                 </picture>
                 <div id="contacts-text-content">
                     <p>Envie uma mensagem diretamente para meu WhatsApp:</p>
@@ -186,34 +189,34 @@
                             <a href="https://www.instagram.com/p/C69qZLpPECG/?locale=pt_PT" target="_blank">
                                 <picture class="slide">
                                     <source media="(min-width: 1600px)"
-                                        srcset="../assets/images/instagram_post_1_lg.jpeg">
+                                        srcset="assets/images/instagram_post_1_lg.jpeg">
                                     <source media="(min-width: 1200px)"
-                                        srcset="../assets/images/instagram_post_1_md.jpeg">
+                                        srcset="assets/images/instagram_post_1_md.jpeg">
                                     <source media="(min-width: 800px)"
-                                        srcset="../assets/images/instagram_post_1_sm.jpeg">
-                                    <img src="../assets/images/instagram_post_1_sm.jpeg" alt="post_img">
+                                        srcset="assets/images/instagram_post_1_sm.jpeg">
+                                    <img src="assets/images/instagram_post_1_sm.jpeg" alt="post_img">
                                 </picture>
                             </a>
                             <a href="https://www.instagram.com/p/C6wwqYIueBp/?locale=pt_PT" target="_blank">
                                 <picture class="slide active">
                                     <source media="(min-width: 1600px)"
-                                        srcset="../assets/images/instagram_post_2_lg.jpeg">
+                                        srcset="assets/images/instagram_post_2_lg.jpeg">
                                     <source media="(min-width: 1200px)"
-                                        srcset="../assets/images/instagram_post_2_md.jpeg">
+                                        srcset="assets/images/instagram_post_2_md.jpeg">
                                     <source media="(min-width: 800px)"
-                                        srcset="../assets/images/instagram_post_2_sm.jpeg">
-                                    <img src="../assets/images/instagram_post_1_sm.jpeg" alt="post_img">
+                                        srcset="assets/images/instagram_post_2_sm.jpeg">
+                                    <img src="assets/images/instagram_post_1_sm.jpeg" alt="post_img">
                                 </picture>
                             </a>
                             <a href="https://www.instagram.com/p/C7Ey1_LuNYj/?locale=pt_PT" target="_blank">
                                 <picture class="slide">
                                     <source media="(min-width: 1600px)"
-                                        srcset="../assets/images/instagram_post_3_lg.jpeg">
+                                        srcset="assets/images/instagram_post_3_lg.jpeg">
                                     <source media="(min-width: 1200px)"
-                                        srcset="../assets/images/instagram_post_3_md.jpeg">
+                                        srcset="assets/images/instagram_post_3_md.jpeg">
                                     <source media="(min-width: 800px)"
-                                        srcset="../assets/images/instagram_post_3_sm.jpeg">
-                                    <img src="../assets/images/instagram_post_1_sm.jpeg" alt="post_img">
+                                        srcset="assets/images/instagram_post_3_sm.jpeg">
+                                    <img src="assets/images/instagram_post_1_sm.jpeg" alt="post_img">
                                 </picture>
                             </a>
                         </div>
@@ -221,10 +224,11 @@
                 </div>
             </div>
         </section>
-        <section id="downloads-section" class="default-background light-background-color">
+        <!--TODO: Section will be included on next update-->
+        <!-- <section id="downloads-section" class="default-background light-background-color">
             <h1 id="downloads-title">Downloads gratuitos</h1>
             <div id="download-items"></div>
-        </section>
+        </section> -->
         <section id="faq-section" class="default-background">
             <h1 id="faq-title">Dúvidas frequentes</h1>
             <div class="faq-grid">
@@ -265,9 +269,9 @@
         </section>
     </main>
 </body>
-<script type="module" src="js/menu.js"></script>
-<script type="module" src="js/to_think.js"></script>
-<script type="module" src="js/contacts.js"></script>
-<script type="module" src="js/downloads.js"></script>
+<script type="module" src="src/js/menu.js"></script>
+<script type="module" src="src/js/to_think.js"></script>
+<script type="module" src="src/js/contacts.js"></script>
+<script type="module" src="src/js/downloads.js"></script>
 
 </html>
