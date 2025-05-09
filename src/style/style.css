@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Whisper&display=swap');
+
+:root {
+    --extra-dark-green: #1c3a20;
+    --dark-green: #2b4e31;
+    --medium-green: #d5dfcf;
+    --light-green: #f1f5e4;
+    --extra-light-green: #eff0ea;
+    --button-light-background: #a3ba9c;
+    --light-border: #d4e4bc;
+
+    --title-font-family: "Whisper";
+    --header-font-family: "Alegreya";
+    --default-font-family: "Libre Baskerville";
+
+    --text-indent: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font-family) serif;
+}
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    color: var(--extra-dark-green);
+}
+
+#main-header-smaller-screen {
+    display: none;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+
+#main-header>a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-weight: normal;
+    color: var(--extra-dark-green);
+    font-family: var(--header-font-family) serif;
+    font-size: 2.5em;
+    transition: font-weight 0.1s ease-out;
+    background-color: white;
+}
+
+#main-header>a:hover {
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#logo img {
+    width: auto;
+    height: auto;
+}
+
+#home-section {
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin-top: 10vh;
+    background-color: var(--extra-light-green);
+}
+
+.background {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-image: url("../../assets/images/background_home.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-left: 15%;
+}
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 64px;
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.photo-container::before,
+.photo-container::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--extra-dark-green);
+    z-index: -1;
+}
+
+.photo-container::before {
+    top: 5%;
+    left: -10%;
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    border-bottom: none;
+}
+
+.photo-container::after {
+    bottom: -5.5%;
+    right: 9.6%;
+    width: 100%;
+    height: 100%;
+    border-top: none;
+    border-left: none;
+}
+
+.text-content {
+    margin: 0 10%;
+    color: var(--extra-dark-green);
+    font-size: 3.5em;
+}
+
+.text-content h1 {
+    font-family: var(--title-font-family), cursive;
+    font-size: 4.5em;
+    font-weight: normal;
+}
+
+.text-content p {
+    margin-left: 5%;
+    text-align: center;
+}
+
+.text-content span {
+    font-weight: bold;
+}
+
+#about-me-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100%;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: var(--light-green);
+}
+
+.title-div {
+    width: 50%;
+    padding: 8px;
+    background-color: var(--medium-green);
+}
+
+.title-div h2 {
+    padding: 8px;
+}
+
+.end {
+    align-self: flex-end;
+    text-align: start;
+}
+
+.start {
+    align-self: flex-start;
+    text-align: end;
+}
+
+.light {
+    background-color: var(--light-green);
+    width: 70%;
+}
+
+.light-background-color {
+    background-color: var(--light-green) !important;
+}
+
+.medium-background-color {
+    background-color: var(--medium-green) !important;
+}
+
+.title-div h2 {
+    font-family: var(--title-font-family), cursive;
+    color: var(--extra-dark-green);
+    font-weight: normal;
+    font-size: 8em;
+    margin-left: 16px;
+}
+
+.photo-container-about-me {
+    margin-top: 8px;
+}
+
+.photo-container-about-me::before,
+.photo-container-about-me::after {
+    border-color: var(--light-border);
+}
+
+.about-me-content {
+    margin: 0 5%;
+    justify-content: space-between;
+}
+
+#qualifications {
+    margin-top: 64px;
+    margin-bottom: 32px;
+    margin-left: 72px;
+}
+
+#qualifications li {
+    margin-bottom: 12px;
+}
+
+.qualifications-items {
+    font-size: 3rem;
+}
+
+.text-configuration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.8rem;
+    text-indent: var(--text-indent);
+}
+
+.text-configuration p {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.dark-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--button-light-background);
+    color: var(--dark-green);
+    border: none;
+    font-size: 2rem;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.dark-button:hover {
+    background-color: var(--dark-green);
+    color: var(--button-light-background);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-border);
+    font-family: var(--title-font-family), cursive;
+    text-decoration: underline;
+    color: var(--extra-dark-green);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 16px;
+    width: 100%;
+    height: 10%;
+    padding: 24px 0;
+    font-size: 5rem;
+}
+
+.default-background {
+    background-color: var(--extra-light-green);
+    max-width: 100%;
+    min-height: 100%;
+    height: fit-content;
+}
+
+.about-me-detail-content {
+    padding-top: 64px;
+    padding-bottom: 24px;
+    margin: 0 5%;
+    justify-content: space-between;
+}
+
+.photo-container-about-me-detail::after {
+    content: '';
+    border: none;
+    background: var(--medium-green);
+    bottom: 0%;
+    right: 10%;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 8% 100%);
+    z-index: -1;
+}
+
+.photo-container-about-me-detail::before {
+    content: '';
+    border: none;
+    background: var(--medium-green);
+    top: 0%;
+    left: 10%;
+    clip-path: polygon(20% 0%, 100% 0%, 92% 100%, 0% 100%);
+    z-index: -1;
+}
+
+#about-me-approach {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-border);
+    padding-top: 71px;
+    padding-bottom: 145px;
+}
+
+#about-me-approach h2 {
+    font-weight: normal;
+    font-size: 5.7rem;
+    margin-bottom: 110px;
+}
+
+#psychotherapy-section {
+    width: 100%;
+    padding-top: 10vh;
+}
+
+#psychotherapy-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#psychotherapy-content button {
+    margin-top: 112px;
+}
+
+.psychotherapy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 200px;
+    margin-top: 64px;
+}
+
+.psychotherapy-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+}
+
+.psychotherapy-grid-container h2 {
+    font-size: 2rem;
+}
+
+.psychotherapy-grid-container p {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.psychotherapy-grid-img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+#psychotherapy-detail-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-green);
+    font-family: var(--title-font-family), cursive;
+    width: 100%;
+    height: 15vh;
+    font-size: 4.7rem;
+}
+
+#psychotherapy-detail-title h1 {
+    font-weight: normal;
+}
+
+.psychotherapy-detail-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 115px 0 115px;
+}
+
+.psychotherapy-detail-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 30vw;
+}
+
+.psychotherapy-detail-text h2 {
+    font-family: var(--title-font-family), cursive;
+    font-size: 6rem;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+.psychotherapy-detail-text p {
+    text-align: justify;
+}
+
+#laptop-photo {
+    margin-left: 64px;
+    align-self: self-end;
+}
+
+.face-to-face-psychotherapy-bg {
+    justify-content: space-evenly;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 64px;
+    padding-bottom: 64px;
+}
+
+.face-to-face-psychotherapy-bg::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url("../../assets/images/face-to-face-psychotherapy-background.jpg");
+    opacity: 0.2;
+}
+
+.face-to-face-psychotherapy-bg picture {
+    position: relative;
+    z-index: 1;
+    margin-right: 64px;
+}
+
+.face-to-face-psychotherapy-bg .psychotherapy-detail-text {
+    position: relative;
+    z-index: 1;
+}
+
+#to-think-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 87px;
+}
+
+#to-think-header {
+    height: 20vh;
+    width: 100%;
+    background-image: url("../../assets/images/to_think_background_header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#to-think-title {
+    font-size: 6rem;
+    font-weight: normal;
+    margin-top: 80px;
+    color: var(--dark-green);
+}
+
+#to-think-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 46px 76px 0 76px;
+    gap: 88px;
+}
+
+.to-think-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+}
+
+.to-think-grid-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-green);
+}
+
+.to-think-grid-text h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.to-think-grid-text p {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.to-think-grid-img {
+    width: 280px;
+    height: 210px;
+    margin-top: 21px;
+}
+
+.to-think-inverted {
+    width: 476px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-think-inverted img {
+    width: 476px;
+    height: 263px;
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+
+.to-think-btn {
+    background: none;
+    border: none;
+    font-family: var(--default-font-family), serif;
+    color: var(--dark-green);
+    align-self: flex-end;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 1.7rem;
+}
+
+.to-think-btn:hover {
+    color: var(--extra-dark-green);
+    font-weight: bold;
+}
+
+#text-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-green);
+    height: 20vh;
+    color: white;
+    font-size: 3.6rem;
+}
+
+#text-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 80vh;
+    margin: 76px 131px 0 131px;
+}
+
+#text-img {
+    width: 356px;
+    height: 628px;
+    align-self: center;
+    object-fit: contain;
+}
+
+#text-content {
+    font-size: 2.5rem;
+    text-align: justify;
+    margin-left: 38px;
+}
+
+#contacts-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 76px;
+    margin: 0 46px;
+}
+
+#contacts-img img {
+    width: 500px;
+    height: 600px;
+    border-radius: 60% 60% 0 0;
+}
+
+#contacts-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-left: 120px;
+}
+
+.whatsapp-button {
+    margin-top: 36px;
+    width: 30%;
+}
+
+.whatsapp-button button {
+    background-color: var(--dark-green);
+    padding: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--light-green);
+    font-family: var(--default-font-family);
+    border: none;
+    cursor: pointer;
+}
+
+#whatsapp-button button:hover {
+    background-color: var(--medium-green);
+    color: var(--dark-green);
+}
+
+#contacts-text-content hr {
+    margin: 36px 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-green);
+    border: none;
+}
+
+.carousel {
+    width: 40%;
+    height: 500px;
+    margin-top: 31px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease, z-index 0.5s;
+    transform-origin: center;
+    transform: scale(0.8) translateX(-50%);
+    z-index: 1;
+}
+
+.slide.active {
+    transform: scale(1) translateX(0);
+    z-index: 2;
+}
+
+.slide.left {
+    transform: scale(0.8) translateX(-120%);
+    z-index: 1;
+}
+
+.slide.right {
+    transform: scale(0.8) translateX(120%);
+    z-index: 1;
+}
+
+.slide img {
+    background-size: cover;
+    background-position: center;
+}
+
+#downloads-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#downloads-title {
+    display: inline-block;
+    font-size: 8rem;
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+}
+
+#download-items {
+    margin: auto;
+}
+
+.download-item-container {
+    display: flex;
+    margin: 30px 0;
+}
+
+.download-img {
+    height: 120px;
+    width: 355px;
+}
+
+.download-text-content {
+    align-self: center;
+    margin: 0 90px;
+    color: var(--dark-green);
+}
+
+.download-text-content a {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--dark-green);
+}
+
+.download-text-content p {
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+#faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#faq-title {
+    font-size: 4rem;
+    margin-top: 24px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    margin-top: 10vh;
+}
+
+.faq-grid-item {
+    justify-self: center;
+    width: 60%;
+    height: 40%;
+}
+
+.faq-grid-item h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.faq-grid-item p {
+    font-size: 2.5rem;
+    margin-top: 12px;
+}
+
+#more-questions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 42px;
+}
+
+#more-questions-container h2 {
+    font-size: 3rem;
+}
+
+#more-questions-container p {
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+#more-questions-container a {
+    margin-top: 16px;
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #main-header>a {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1200px) {
+    #main-header {
+        display: none;
+    }
+
+    #main-header-smaller-screen {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10vh;
+        width: 100%;
+        background-color: white;
+        z-index: 100;
+    }
+
+    #logo {
+        margin-left: 24px;
+    }
+
+    #menu-button {
+        width: 32px;
+        height: 32px;
+        margin-right: 24px;
+        font-size: 20px;
+        background: none;
+        color: var(--extra-dark-green);
+        cursor: pointer;
+        border: 2px solid var(--extra-dark-green);
+        border-radius: 20%;
+    }
+
+    #menu-button:hover {
+        color: var(--dark-green);
+        border: 3px solid var(--dark-green);
+        font-weight: bold;
+    }
+
+    #side-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -30%;
+        width: 30%;
+        height: 100%;
+        background-color: white;
+        transition: 0.3s ease;
+        z-index: 1000;
+    }
+
+    #side-menu.opened {
+        right: 0;
+    }
+
+    #close-button {
+        width: 10%;
+        font-size: 4rem;
+        margin: 24px 24px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        align-self: self-end;
+        color: var(--extra-dark-green);
+    }
+
+    #close-button:hover {
+        color: var(--dark-green);
+        font-weight: bold;
+    }
+
+    #side-menu > a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        font-weight: normal;
+        color: var(--extra-dark-green);
+        font-family: var(--header-font-family) serif;
+        font-size: 2.5em;
+        transition: font-weight 0.1s ease-out;
+        background-color: white;
+        margin: 20px 0;
+    }
+    
+    #side-menu > a:hover {
+        color: var(--dark-green);
+        font-weight: bold;
+    }
+
+    .background {
+        background-image: url("../../assets/images/fernanda_home_lg.jpg");
+    }
+
+    .photo-home {
+        display: none;
+    }
+
+    .photo-container-home {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    .text-content p {
+        font-size: 6rem;
+    }
+
+    .text-content p {
+        font-size: 3rem;
+    }
+
+    .title-div h2 {
+        font-size: 6rem;
+    }
+
+    .photo-container-about-me {
+        margin-top: 64px;
+    }
+
+    #qualifications {
+        font-size: 3.5rem;
+    }
+
+    .text-configuration a {
+        margin-bottom: 24px;
+    }
+
+    .psychotherapy-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 64px;
+        column-gap: 64px;
+    }
+
+    .psychotherapy-grid-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #psychotherapy-content a {
+        margin-bottom: 24px;
+    }
+
+    #to-think-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    .to-think-grid-container {
+        width: 360px;
+    }
+
+    .to-think-grid-img {
+        width: 180px;
+        height: 210px;
+        margin-top: 21px;
+    }
+    
+    .to-think-inverted {
+        width: 360px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .to-think-inverted img {
+        width: 360px;
+        height: 180px;
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
+
+    #contacts-content-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 76px;
+    }
+
+    #contacts-img img {
+        width: 300px;
+        height: 400px;
+    }
+
+    #contacts-text-content {
+        font-size: 2.5rem;
+        margin-left: 0;
+        margin-top: 64px;
+    }
+
+    .carousel {
+        width: 20%;
+        height: 300px;
+        margin-right: 72px;
+    }
+
+    #downloads-section {
+        flex-direction: column;
+    }
+
+    #downloads-title {
+        font-size: 4rem;
+        rotate: none;
+        writing-mode: horizontal-tb;
+        margin-top: 64px;
+    }
+
+    .download-item-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-img {
+        height: 120px;
+        width: 300px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #more-questions-container {
+        width: 80%;
+        margin-top: 42px;
+        margin-bottom: 42px;
+    }
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+    .psychotherapy-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 64px;
+    }
+
+    .psychotherapy-grid-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #psychotherapy-content a {
+        margin-bottom: 24px;
+    }
+
+    .carousel {
+        width: 30%;
+        height: 300px;
+        margin-right: 72px;
+    }
+}
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Fernanda</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="main-header">
+        <picture id="logo">
+            <source media="(min-width: 1300px)" srcset="../assets/images/logo.png">
+            <source media="(min-width: 800px)" srcset="../assets/images/logo_sm.png">
+            <img src="../assets/images/logo_sm.png" alt="logo"></img>
+        </picture>
+        <a href="#home-section">Home</a>
+        <a href="#about-me-section">Sobre mim</a>
+        <a href="#psychotherapy-section">Psicoterapia</a>
+        <!-- <a href="#to-think-section">Textos</a> -->
+        <a href="#contacts-section">Contato</a>
+        <a href="#downloads-section">Downloads</a>
+        <a href="#faq-section">Dúvidas</a>
+    </header>
+    <header id="main-header-smaller-screen">
+        <picture id="logo">
+            <source media="(min-width: 1300px)" srcset="../assets/images/logo.png">
+            <source media="(min-width: 800px)" srcset="../assets/images/logo_sm.png">
+            <img src="../assets/images/logo_sm.png" alt="logo"></img>
+        </picture>
+        <button id="menu-button">&#9776;</button>
+        <div id="side-menu">
+            <button id="close-button">&#215;</button>
+            <a href="#home-section" class="side-menu-button">Home</a>
+            <a href="#about-me-section" class="side-menu-button">Sobre mim</a>
+            <a href="#psychotherapy-section" class="side-menu-button">Psicoterapia</a>
+            <a href="#to-think-section" class="side-menu-button">Textos</a>
+            <a href="#contacts-section" class="side-menu-button">Contato</a>
+            <a href="#downloads-section" class="side-menu-button">Downloads</a>
+            <a href="#faq-section" class="side-menu-button">Dúvidas</a>
+        </div>
+    </header>
+    <main>
+        <section id="home-section">
+            <div class="background"></div>
+            <div class="content">
+                <div class="photo-container photo-container-home">
+                    <picture class="photo photo-home">
+                        <source media="(min-width: 1600px)" srcset="../assets/images/fernanda_home_lg.jpg">
+                        <source media="(min-width: 1200px)" srcset="../assets/images/fernanda_home_md.jpg">
+                        <source media="(min-width: 800px)" srcset="../assets/images/fernanda_home_sm.jpg">
+                        <img src="../assets/images/fernanda_home_sm.jpg" alt="maria_fernanda_img">
+                    </picture>
+                </div>
+                <div class="text-content">
+                    <h1>Olá!</h1>
+                    <p>
+                        Me chamo <span>Maria Fernanda</span> e é um prazer te receber aqui! Sinta-se à vontade para
+                        passear pelas páginas e conhecer um pouco sobre mim e sobre meu trabalho.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="about-me-section">
+            <div class="title-div end">
+                <h2>Sobre mim</h2>
+            </div>
+            <div class="content about-me-content">
+                <div class="photo-container photo-container-about-me">
+                    <picture class="photo">
+                        <source media="(min-width: 1600px)" srcset="../assets/images/fernanda_about_me_lg.jpg">
+                        <source media="(min-width: 1200px)" srcset="../assets/images/fernanda_about_me_md.jpg">
+                        <source media="(min-width: 800px)" srcset="../assets/images/fernanda_about_me_sm.jpg">
+                        <img src="../assets/images/fernanda_about_me_sm.jpg" alt="maria_fernanda_img">
+                    </picture>
+                </div>
+                <div class="text-content">
+                    <div id="qualifications">
+                        <ul>
+                            <li>Formada pela Universidade Federal da Bahia (UFBA)</li>
+                            <li>Pós-graduada em Avaliação Psicológica</li>
+                            <li>Pós-graduanda em terapia de Aceitação e Compromisso</li>
+                            <li>Atendo com base da Terapia de Aceitação e Compromisso</li>
+                        </ul>
+                    </div>
+                    <div class="text-configuration">
+                        <p>Durante a graduação estagiei na Clínica Escola da UFBA com atendimentos em psicoterapia
+                            individual. Participei também da Liga Acadêmica de Neurociência e fundei, juntamente a
+                            outros colegas, a LAOPRO (Liga Acadêmica de Orientação Profissional e de Carreira).</p>
+                        <p>A relação do ser humano com o mundo e consigo mesmo sempre me causaram bastante interesse. A
+                            forma com que lidamos com nossas experiências internas e de que forma escolhemos construir
+                            nossas vidas. Em geral, a psicologia me encanta quando observo toda complexidade,
+                            profundidade e por todo potencial transformador para vida das pessoas.</p>
+                        <a href="about_me_detail_page.html"><button class="dark-button">Ver mais</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="psychotherapy-section" class="default-background">
+            <div class="title-div light start">
+                <h2>Trabalhos em destaque</h2>
+            </div>
+            <div id="psychotherapy-content">
+                <div class="psychotherapy-grid">
+                    <div class="psychotherapy-grid-container">
+                        <img class="psychotherapy-grid-img"
+                            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="online-psychotherapy">
+                        <h2>PSICOTERAPIA ON-LINE</h2>
+                        <P>Realizada por meio de vídeochamada, demonstra ser tão eficaz quanto a terapia presencial.</P>
+                    </div>
+                    <div class="psychotherapy-grid-container">
+                        <img class="psychotherapy-grid-img"
+                            src="https://images.unsplash.com/photo-1552664467-e8727a018a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="face-to-face-psychotherapy">
+                        <h2>PSICOTERAPIA PRESENCIAL</h2>
+                        <P>Realizada no consultório, que atualmente fica localizado no Caminho das Árvores (próximo ao
+                            Salvador Shopping).</P>
+                    </div>
+                    <div class="psychotherapy-grid-container">
+                        <img class="psychotherapy-grid-img" src="../assets/images/fernanda_psychotherapy.jpg"
+                            alt="neuropsychological-assesment">
+                        <h2>AVALIAÇÃO NEUROPSICOLÓGICA</h2>
+                        <P>Processo essencial para a compreensão do funcionamento atual do cérebro em relação as funções
+                            cognitivas, emocionais e comportamentais.</P>
+                    </div>
+                    <div class="psychotherapy-grid-container">
+                        <img class="psychotherapy-grid-img"
+                            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="professional-guidance">
+                        <h2>ORIENTAÇÃO PROFISSIONAL E DE CARREIRA</h2>
+                        <P>Busca auxiliar no processo de tomada de decisão mais consciente sobre as trajetórias
+                            profissionais.</P>
+                    </div>
+                </div>
+                <a href="psychotherapy_detail_page.html"><button class="dark-button">Ver mais</button></a>
+            </div>
+        </section>
+        <section id="to-think-section" class="default-background medium-background-color">
+            <header id="to-think-header"></header>
+            <h1 id="to-think-title">Para refletir</h1>
+            <div id="to-think-grid">
+                <div class="to-think-grid-container">
+                    <div class="to-think-grid-text">
+                        <h2 class="to-think-title"></h2>
+                        <div class="to-think-text"></div>
+                        <button class="to-think-btn">Ver mais</button>
+                    </div>
+                    <img class="to-think-grid-img" alt="importance-sleep-well">
+                </div>
+                <div class="to-think-grid-container to-think-inverted">
+                    <div class="to-think-grid-text">
+                        <h2 class="to-think-title"></h2>
+                        <div class="to-think-text"></div>
+                        <button class="to-think-btn">Ver mais</button>
+                    </div>
+                    <img class="to-think-grid-img" alt="cellphone-anxiety">
+                </div>
+                <div class="to-think-grid-container">
+                    <div class="to-think-grid-text">
+                        <h2 class="to-think-title"></h2>
+                        <div class="to-think-text"></div>
+                        <button class="to-think-btn">ver mais</button>
+                    </div>
+                    <img class="to-think-grid-img" alt="handle-errors">
+                </div>
+        </section>
+        <section id="contacts-section" class="default-background light-background-color">
+            <div id="contacts-content-container">
+                <picture id="contacts-img">
+                    <source media="(min-width: 1600px)" srcset="../assets/images/fernanda_contacts_lg.jpg">
+                    <source media="(min-width: 1200px)" srcset="../assets/images/fernanda_contacts_md.jpg">
+                    <source media="(min-width: 800px)" srcset="../assets/images/fernanda_contacts_sm.jpg">
+                    <img src="../assets/images/fernanda_contacts_sm.jpg" alt="maria_fernanda_img">
+                </picture>
+                <div id="contacts-text-content">
+                    <p>Envie uma mensagem diretamente para meu WhatsApp:</p>
+                    <a class="whatsapp-button" href="https://wa.me/5574991139433?text=Olá, "
+                        target="_blank"><button>WHATSAPP</button></a>
+                    <hr>
+                    <p>Conecte-se comigo através do meu <strong>Instagram:</strong></p>
+                    <div class="carousel">
+                        <div class="slides">
+                            <a href="https://www.instagram.com/p/C69qZLpPECG/?locale=pt_PT" target="_blank">
+                                <picture class="slide">
+                                    <source media="(min-width: 1600px)"
+                                        srcset="../assets/images/instagram_post_1_lg.jpeg">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="../assets/images/instagram_post_1_md.jpeg">
+                                    <source media="(min-width: 800px)"
+                                        srcset="../assets/images/instagram_post_1_sm.jpeg">
+                                    <img src="../assets/images/instagram_post_1_sm.jpeg" alt="post_img">
+                                </picture>
+                            </a>
+                            <a href="https://www.instagram.com/p/C6wwqYIueBp/?locale=pt_PT" target="_blank">
+                                <picture class="slide active">
+                                    <source media="(min-width: 1600px)"
+                                        srcset="../assets/images/instagram_post_2_lg.jpeg">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="../assets/images/instagram_post_2_md.jpeg">
+                                    <source media="(min-width: 800px)"
+                                        srcset="../assets/images/instagram_post_2_sm.jpeg">
+                                    <img src="../assets/images/instagram_post_1_sm.jpeg" alt="post_img">
+                                </picture>
+                            </a>
+                            <a href="https://www.instagram.com/p/C7Ey1_LuNYj/?locale=pt_PT" target="_blank">
+                                <picture class="slide">
+                                    <source media="(min-width: 1600px)"
+                                        srcset="../assets/images/instagram_post_3_lg.jpeg">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="../assets/images/instagram_post_3_md.jpeg">
+                                    <source media="(min-width: 800px)"
+                                        srcset="../assets/images/instagram_post_3_sm.jpeg">
+                                    <img src="../assets/images/instagram_post_1_sm.jpeg" alt="post_img">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="downloads-section" class="default-background light-background-color">
+            <h1 id="downloads-title">Downloads gratuitos</h1>
+            <div id="download-items"></div>
+        </section>
+        <section id="faq-section" class="default-background">
+            <h1 id="faq-title">Dúvidas frequentes</h1>
+            <div class="faq-grid">
+                <div class="faq-grid-item">
+                    <h2>Quando terei alta?</h2>
+                    <p>Não é possível prever com quanto tempo o processo de psicoterapia chegará ao fim. Inúmeros
+                        fatores serão responsáveis pelo progresso, sejam eles o engajamento, frequência, demanda a ser
+                        trabalhada, dentre outros.
+                        O processo de alta é realizado em parceria com o paciente.</p>
+                </div>
+                <div class="faq-grid-item">
+                    <h2>Você atende por convênios?</h2>
+                    <p>Não atendo por convênios. Mas emito recibo ou nota fiscal para que você possa, junto ao seu
+                        convênio, solicitar reembolso.
+                        Caso tenha alguma dúvida a respeito de reembolso, basta entrar em contato com a operadora do seu
+                        plano de saúde.</p>
+                </div>
+                <div class="faq-grid-item">
+                    <h2>Qual duração e frequência dos encontros?</h2>
+                    <p>As sessões são semanais, com duração média de 50 minutos (podendo variar para mais ou para menos
+                        a depender das circunstâncias).
+                        É possível a realização de sessões quinzenais, dependendo da avaliação conjunta da psicóloga e
+                        do paciente.</p>
+                </div>
+                <div class="faq-grid-item">
+                    <h2>Coloque seu subcabeçalho aqui</h2>
+                    <p>Este espaço é muito importante! Use-o para elaborar um título de seção cativante. Explique o
+                        conteúdo da seção, compartilhe alguns detalhes e dê a quantidade certa de informações para
+                        fisgar seu público.</p>
+                </div>
+            </div>
+            <div id="more-questions-container">
+                <h2>Mais alguma dúvida?</h2>
+                <p>Entre em contato comigo via WhatsApp</p>
+                <a class="whatsapp-button" href="https://wa.me/5574991139433?text=Olá, "
+                    target="_blank"><button>WHATSAPP</button></a>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="module" src="js/menu.js"></script>
+<script type="module" src="js/to_think.js"></script>
+<script type="module" src="js/contacts.js"></script>
+<script type="module" src="js/downloads.js"></script>
+
+</html>
