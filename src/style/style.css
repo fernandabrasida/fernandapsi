@@ -38,6 +38,7 @@ main {
 
 #main-header {
     display: flex;
+    min-height: fit-content;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
@@ -1030,13 +1031,12 @@ main {
 
 @media(min-width: 1201px) and (max-width: 1400px) {
     .psychotherapy-grid {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 64px;
+        column-gap: 102px;
     }
 
     .psychotherapy-grid-img {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
     }
 
     #psychotherapy-content a {
@@ -1047,6 +1047,10 @@ main {
         width: 30%;
         height: 300px;
         margin-right: 72px;
+    }
+
+    #more-questions-container {
+        padding-bottom: 24px;
     }
 }
 
