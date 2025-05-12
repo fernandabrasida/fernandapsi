@@ -867,7 +867,7 @@ main {
         font-weight: bold;
     }
 
-    #side-menu > a {
+    #side-menu>a {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -880,8 +880,8 @@ main {
         background-color: white;
         margin: 20px 0;
     }
-    
-    #side-menu > a:hover {
+
+    #side-menu>a:hover {
         color: var(--dark-green);
         font-weight: bold;
     }
@@ -958,7 +958,7 @@ main {
         height: 210px;
         margin-top: 21px;
     }
-    
+
     .to-think-inverted {
         width: 360px;
         display: flex;
@@ -966,7 +966,7 @@ main {
         justify-content: center;
         align-items: center;
     }
-    
+
     .to-think-inverted img {
         width: 360px;
         height: 180px;
@@ -1054,3 +1054,15 @@ main {
     }
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+    html,
+    body,
+    main {
+        font-size: 8px;
+    }
+
+    .psychotherapy-grid-img {
+        width: 100px;
+        height: 100px;
+    }
+}
