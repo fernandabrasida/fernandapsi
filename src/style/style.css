@@ -34,6 +34,7 @@ main {
 
 #main-header-smaller-screen {
     display: none;
+    min-height: fit-content;
 }
 
 #main-header {
@@ -1054,11 +1055,12 @@ main {
     }
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (orientation: landscape) {
+
     html,
     body,
     main {
-        font-size: 8px;
+        font-size: 6px;
     }
 
     .psychotherapy-grid-img {
