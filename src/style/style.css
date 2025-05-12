@@ -1065,4 +1065,8 @@ main {
         width: 100px;
         height: 100px;
     }
+
+    .psychotherapy-grid {
+        column-gap: 24px;
+    }
 }
