@@ -59,7 +59,7 @@ main {
     font-weight: normal;
     color: var(--extra-dark-green);
     font-family: var(--header-font-family) serif;
-    font-size: 2.5em;
+    font-size: 3.5rem;
     transition: font-weight 0.1s ease-out;
     background-color: white;
 }
@@ -789,12 +789,6 @@ main {
     margin-top: 16px;
 }
 
-@media (min-width: 1201px) and (max-width: 1600px) {
-    #main-header>a {
-        font-size: 2em;
-    }
-}
-
 @media (max-width: 1200px) {
     html,
     body,
@@ -1061,6 +1055,10 @@ main {
 
     #side-menu>a {
         font-size: 1rem;
+    }
+
+    #main-header>a {
+        font-size: 3rem;
     }
 }
 
