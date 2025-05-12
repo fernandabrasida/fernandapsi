@@ -796,6 +796,11 @@ main {
 }
 
 @media (max-width: 1200px) {
+    html,
+    body,
+    main {
+        font-size: 7px;
+    }
     #main-header {
         display: none;
     }
@@ -1053,6 +1058,10 @@ main {
     #more-questions-container {
         padding-bottom: 24px;
     }
+
+    #side-menu>a {
+        font-size: 1rem;
+    }
 }
 
 @media (orientation: landscape) {
@@ -1070,5 +1079,13 @@ main {
 
     .psychotherapy-grid {
         column-gap: 24px;
+    }
+
+    #side-menu {
+        overflow-y: auto;
+    }
+
+    #side-menu>a {
+        font-size: 2rem;
     }
 }
