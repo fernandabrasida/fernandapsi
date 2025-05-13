@@ -59,7 +59,7 @@ main {
     font-weight: normal;
     color: var(--extra-dark-green);
     font-family: var(--header-font-family) serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     transition: font-weight 0.1s ease-out;
     background-color: white;
 }
@@ -83,7 +83,7 @@ main {
 
 #home-section {
     max-height: 100%;
-    height: 100%;
+    height: 80%;
     width: 100%;
     margin-top: 10vh;
     background-color: var(--extra-light-green);
@@ -94,7 +94,7 @@ main {
     top: 10vh;
     left: 0;
     width: 30%;
-    height: 100%;
+    height: 80%;
     background-image: url("../../assets/images/background_home.png");
     background-size: cover;
     background-position: center;
@@ -113,7 +113,7 @@ main {
 .photo-container {
     position: relative;
     display: inline-block;
-    margin-top: 64px;
+    margin-top: 48px;
 }
 
 .photo {
@@ -252,7 +252,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     text-indent: var(--text-indent);
 }
 
@@ -267,7 +267,7 @@ main {
     background-color: var(--button-light-background);
     color: var(--dark-green);
     border: none;
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin-top: 32px;
     cursor: pointer;
 }
@@ -886,7 +886,12 @@ main {
         font-weight: bold;
     }
 
+    #home-section {
+        height: 60%;
+    }
+
     .background {
+        height: 60%;
         background-image: url("../../assets/images/fernanda_home_lg.jpg");
     }
 
@@ -902,10 +907,6 @@ main {
         flex-direction: column;
         max-height: 100%;
         height: 100%;
-    }
-
-    .text-content p {
-        font-size: 6rem;
     }
 
     .text-content p {
@@ -1062,12 +1063,21 @@ main {
     }
 }
 
-@media (orientation: landscape) {
+@media (min-width: 300px) and (max-width: 900px) {
 
     html,
     body,
     main {
-        font-size: 6px;
+        font-size: 8px;
+    }
+
+    #home-section {
+        height: 50%;
+    }
+
+    .background {
+        height: 50%;
+        background-image: url("../../assets/images/fernanda_home_lg.jpg");
     }
 
     .psychotherapy-grid-img {
