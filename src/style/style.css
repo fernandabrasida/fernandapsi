@@ -176,6 +176,7 @@ main {
     min-height: 100%;
     width: 100%;
     padding-top: 10vh;
+    padding-bottom: 10vh;
     background-color: var(--light-green);
 }
 
@@ -790,11 +791,13 @@ main {
 }
 
 @media (max-width: 1200px) {
+
     html,
     body,
     main {
         font-size: 7px;
     }
+
     #main-header {
         display: none;
     }
@@ -1031,6 +1034,33 @@ main {
 }
 
 @media(min-width: 1201px) and (max-width: 1400px) {
+
+    html,
+    body,
+    main {
+        font-size: 9px;
+    }
+
+    #main-header>a {
+        font-size: 2.2rem;
+    }
+
+    .text-content > h1 {
+        font-size: 3em;
+    }
+
+    .text-content > p {
+        font-size: 3rem;
+    }
+
+    #qualifications > ul > li {
+        font-size: 2.5rem;
+    }
+
+    .about-me-content > .text-content > .text-configuration > p {
+        font-size: 2.5rem;
+    }
+
     .psychotherapy-grid {
         column-gap: 102px;
     }
@@ -1058,9 +1088,6 @@ main {
         font-size: 1rem;
     }
 
-    #main-header>a {
-        font-size: 3rem;
-    }
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
